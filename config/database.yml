@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: demo_user_auth_development
+  pool: 2
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: demo_user_auth_test
+  pool: 2
