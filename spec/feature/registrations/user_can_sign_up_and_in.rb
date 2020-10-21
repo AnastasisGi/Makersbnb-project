@@ -3,11 +3,13 @@ require 'spec_helper'
 feature 'Registrations' do
   scenario 'user can sign up and be signed in' do
     visit('registrations/new')
-    puts page.body
-    fill_in('email',with:'test@test.com')
+    # puts page.body
+    fill_in('email', with:'test@test.com')
     fill_in('password',with:'test12')
-    click_button 'submit'
+    click_button ('submit')
+    # puts page.body
     expect(page.current_path).to eq ('/')
-    expect(page).to have_content('Hi test@test.com ')
+    expect(page).to have_content('Hi, test@test.com')
+
   end
 end

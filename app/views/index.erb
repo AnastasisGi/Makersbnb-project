@@ -1,1 +1,8 @@
-Hi, <%= %>
+Hi, <%= current_user.email %>
+
+
+
+<form class="" action="/sessions" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit"  value="sign out">
+</form>
