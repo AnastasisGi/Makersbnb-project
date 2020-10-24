@@ -10,7 +10,6 @@ class MakersBnB < Sinatra::Base
      authenticate!
    end
 
-
   def current_user
     User.find_by(id: session[:user_id])
   end
@@ -18,5 +17,6 @@ class MakersBnB < Sinatra::Base
   def authenticate!
     redirect '/sign_in' if current_user.nil?
   end
+
 
 end

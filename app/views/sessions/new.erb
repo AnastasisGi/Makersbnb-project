@@ -1,5 +1,26 @@
-<form class="" action="/sessions" method="post">
-<input type="email" name="email" >
-<input type="password" name="password" >
-<input type="submit"  value="submit">
-</form>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <h1 style="font-size:60px;">MakersBnB</h1>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style= "background: black;color:white;font-family:courier;">
+
+    Do you have an account ? Log in.
+    <p>
+    <form class="" action="/sessions" method="post">
+          <label for="fname">Email:</label><br>  <input type="email" name="email" >
+          <p>
+        <label for="fname">Password:</label><br><input type="password" name="password" >
+
+        <input type="submit"  value="submit">
+
+        <p>
+          <!-- or else sign up -->
+          Or else     <a href="/registrations/new">Sign up!</a>
+
+
+    </form>
+  </body>
+</html>

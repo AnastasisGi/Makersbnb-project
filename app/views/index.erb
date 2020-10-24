@@ -1,8 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<body style= "background: black;color:white;font-family:courier;" >
+
+  <head charset="utf-40"  style= "background: black;color:white;font-family:courier;">
+<h1 style="font-size:60px;">MakersBnB</h1>
+
+
+
+    <meta charset="utf-15">
+    <title style= "background: black;color:white;font-family:courier;"> MakersBnBs </title>
+
+
+
+  </head >
 Hi, <%= current_user.email %>
+<p>
+Below is a list with all available spaces:
+
+<p>
+
+    <% @spaces.each do |space| %>
+    <li>
+      <%= space.name%>:
+      <%= space.description%>
+      £<%= space.price %> per night
+</li>
+
+    <%end%>
 
 
 
-<form class="" action="/sessions" method="post">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit"  value="sign out">
-</form>
+
+
+
+
+<p> <a href="/add_space">Add new space</a>
+
+<p></p>
+<p></p>
+  <form class="" action="/sessions" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit"  value="sign out">
+  </form>
+  </body>
+</html>

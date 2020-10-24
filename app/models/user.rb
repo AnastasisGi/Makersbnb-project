@@ -9,7 +9,6 @@ include BCrypt
     user
   end
 
-
   def password
    @password ||= Password.new(password_hash)
   end
